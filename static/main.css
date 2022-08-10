@@ -1,0 +1,76 @@
+body {
+ background: #000 url(fon13.jpg);
+ font-size: 30px;
+ text-align: center;
+ color: red;
+}
+H1 {
+text-align: center
+}
+p {
+ max-width: 12em;
+ min-height: 6em;
+ margin-right: auto;
+ margin-left: 0em;
+ border: 1px solid orange;
+ background: #fff5d7;
+ float: left;
+ font-size: 23px;
+}
+input {
+ width: 35%;
+ height: 48px;
+ font-size: 30px;
+ margin:margin-top margin-right margin-bottom margin-left;
+ margin:5px 20px 10px -260px;
+64
+}
+.inputarray{
+ margin:margin-top margin-right margin-bottom margin-left;
+ margin:5px 20px 10px 237px;
+}
+.btn{
+background: red;
+font-size: 30px;
+border-radius: 10px/20px;
+margin:margin-top margin-right margin-bottom margin-left;
+width: 30%;
+}
+#otvet{
+margin:margin-top margin-right margin-bottom margin-left;
+ margin:40px 20px 40px -80px;
+ width: 40%;
+}
+#w{
+width: 6%;
+margin:margin-top margin-right margin-bottom margin-left;
+ margin:10px 20px 10px 0px;
+}
+#generation{
+background-color: rgb(255, 255, 128);
+}
+#size{
+width: 6%;
+margin:margin-top margin-right margin-bottom margin-left;
+ margin:10px 20px 10px 0px;
+ font-size: 17px;
+}
+.file{
+width: 25%;
+margin:margin-top margin-right margin-bottom margin-left;
+ margin:10px 20px 10px 0px;
+ font-size: 20px;
+}
+#N{
+width: 16%;
+font-size: 22px;
+}
+#time{
+width: 16%;
+margin:margin-top margin-right margin-bottom margin-left;
+ margin:10px 20px 10px 0px;
+font-size: 22px;
+}
+#download{
+background-color: rgb(255, 255, 255);
+)

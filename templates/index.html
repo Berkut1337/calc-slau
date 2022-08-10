@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport"
+ content="width=device-width, user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0, minimum-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="{{ url_for('static',
+filename='main.css') }}">
+ <title>Berkut</title>
+</head>
+<body>
+ <h1> Калькулятор решения СЛАУ </h1>
+ <p> Массив значений - массив, в котором хранятся ненулевые значения
+взятые подряд из первой строки, затем идут значения из следующей строки и
+т.д.<br><br>
+ Массив индексов столбцов - массив, который хранит номера столбцов,
+соответствующих элементов из массива значений.Массив начинается с нуля.<br><br>
+62
+ Массив индексации строк - массив, который для индекса i хранит
+количество ненулевых элементов в строках с первой до i-1 строки включительно,
+стоит отметить что последний элемент массива индексации строк совпадает с
+количеством элементов в матрице, а первый всегда равен 0.
+ </p>
+ <form enctype="multipart/form-data" method="post">
+ <input class="inputarray" id ="title" type="text" name="title"
+id="title" placeholder="Введите массив значений" class="form-control"
+value="{{elem_text}}">
+ <input type="file" name="file_elem" class="file"><br>
+ <input class="inputarray" type="text" name="jptr" id="jptr"
+placeholder="Введите массив индексов столбцов" class="form-control"
+value="{{jptr_text}}">
+ <input type="file" name="file_jptr" class="file"><br>
+ <input class="inputarray" type="text" name="iptr" id="iptr"
+placeholder="Введите массив индексации строк" class="form-control"
+value="{{iptr_text}}">
+ <input type="file" name="file_iptr" class="file"><br>
+ <input class="inputarray" type="text" name="b" id="b"
+placeholder="Введите b" class="form-control" value="{{b_text}}">
+ <input type="file" name="file_b" class="file"><br>
+ <input type="text" name="e" id="e" placeholder="Введите точность"
+class="form-control" value="{{accuracy_text}}"><br>
+ <input name="Jacobi" type="submit" class="btn btn-success"
+value="Решить методом Якоби"><br>
+ <input name="Gauss" type="submit" class="btn btn-success"
+value="Решить методом Гаусса-Зейделя"><br>
+ <input id ="knopka3" name="Relax" type="submit" class="btn btnsuccess" value="Решить методом релаксации">
+ <input id ="w" type="text" name="w" placeholder="w" class="formcontrol" value="{{w_text}}"><br>
+ <input id ="generation" name="Generation" type="submit" class="btn
+btn-success" value="Сгенерировать СЛАУ">
+ <input id ="size" type="text" name="size" id="size"
+placeholder="Ранг матрицы" class="form-control" value="{{size_text}}"><br>
+ <input type="text" name="N" id="N" placeholder="Количество
+итераций" class="form-control" value="{{num_iter}}">
+ <input type="text" name="time" id="time" placeholder="Время
+решения" class="form-control" value="{{time_text}}"><br>
+ <input id ="otvet" type="text" name="otvet" id="otvet"
+placeholder="Ответ" class="form-control" value="{{ans_text}}">
+ <a id ="download" href="download">Скачать ответ</a><br>
+ <img src="{{ user_image }}" alt="График сходимости решения">
+ <img src="{{ user_image2 }}" alt="График невязки">
+ </form>
+</body>
+</html>
